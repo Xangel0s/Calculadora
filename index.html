@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Interactiva</h1>
+        <form id="formCalculadora">
+            <div class="input-group">
+                <input type="number" id="numero1" placeholder="Primer número" required />
+                <input type="number" id="numero2" placeholder="Segundo número" required />
+            </div>
+            <div class="select-group">
+                <select id="operacion" required>
+                    <option value="">Selecciona operación</option>
+                    <option value="sumar">Sumar</option>
+                    <option value="restar">Restar</option>
+                    <option value="multiplicar">Multiplicar</option>
+                    <option value="dividir">Dividir</option>
+                </select>
+            </div>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
